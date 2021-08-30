@@ -1,5 +1,6 @@
 import data,{
   home,
+  link,
   content,
   newDiv,
   about,
@@ -43,7 +44,7 @@ home.addEventListener("click", () => {
 });
 about.addEventListener("click", ()=>{
   content.innerHTML = "";
-  
+
   console.log(images)
 
 
@@ -51,5 +52,19 @@ about.addEventListener("click", ()=>{
     content.appendChild(item)
   })
 
+
+})
+contactUs.addEventListener("click", ()=>{
+  const newLink  = link()
+  const div = newDiv()
+  newLink.href = "https://github.com/prince-hope1975/restaurant_homepage";
+  newLink.textContent="Link to my github profile here"
+  const _P = newP()
+  _P.textContent= "Contact Me with the link below"
+  div.appendChild(_P)
+  div.appendChild(newLink)
+  content.innerHTML = "";
+  content.appendChild(div)
+  
 
 })

@@ -4,6 +4,9 @@ export const content = document.querySelector(".content");
 export const newDiv = () => {
   return document.createElement("div");
 };
+export const link =()=>{
+    return document.createElement("a");
+}
 export const about = document.querySelector(".about");
 export const contactUs = document.querySelector(".contact");
 export const newP = () => {
